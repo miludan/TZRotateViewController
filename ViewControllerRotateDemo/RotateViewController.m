@@ -8,11 +8,20 @@
 
 #import "RotateViewController.h"
 
-@interface RotateViewController ()
+@interface RotateViewController ()<UIViewControllerTransitioningDelegate>
 
 @end
 
 @implementation RotateViewController
+
+- (id)init {
+    self = [super init];
+    if (self) {
+        self.transitioningDelegate = self;
+        self.modalPresentationStyle = UIModalPresentationFullScreen;
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,5 +42,29 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - Public Method
+- (IBAction)transform:(id)sender {
+    if (self.presentingViewController) {
+        //transform to embadded
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }else {
+        //transform to fullscreen
+        [[UIApplication sharedApplication].delegate.window.rootViewController presentViewController:self animated:YES completion:nil];
+    }
+}
+
+#pragma mark - UIViewControllerTransitioningDelegate Method
+- (nullable id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
+    return nil;
+}
+
+- (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+    return nil;
+}
+
+- (nullable UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(nullable UIViewController *)presenting sourceViewController:(UIViewController *)source {
+    return nil;
+}
 
 @end

@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RotateViewController.h"
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView* containerView;
+@property (strong, nonatomic) RotateViewController* rotateVC;
 
 @end
 
