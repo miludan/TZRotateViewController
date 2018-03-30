@@ -7,6 +7,8 @@
 //
 
 #import "RotateViewController.h"
+#import "DismissAnimation.h"
+#import "PresentAnimation.h"
 
 @interface RotateViewController ()<UIViewControllerTransitioningDelegate>
 
