@@ -6,9 +6,9 @@
 //  Copyright © 2018年 Neulion. All rights reserved.
 //
 
-#import "DismissAnimation.h"
+#import "TZDismissAnimation.h"
 
-@implementation DismissAnimation
+@implementation TZDismissAnimation
 
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext
 {

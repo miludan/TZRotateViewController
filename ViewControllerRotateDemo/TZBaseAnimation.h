@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface BaseAnimation : NSObject<UIViewControllerAnimatedTransitioning>
+@interface TZBaseAnimation : NSObject<UIViewControllerAnimatedTransitioning>
 
 @end

@@ -6,8 +6,8 @@
 //  Copyright © 2018年 Neulion. All rights reserved.
 //
 
-#import "BaseAnimation.h"
+#import "TZBaseAnimation.h"
 
-@interface PresentAnimation : BaseAnimation
+@interface TZPresentAnimation : TZBaseAnimation
 
 @end

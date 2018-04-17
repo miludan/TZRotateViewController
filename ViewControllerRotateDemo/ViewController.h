@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RotateViewController.h"
+#import "TZRotateViewController.h"
 
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIView* containerView;
-@property (strong, nonatomic) RotateViewController* rotateVC;
+@property (strong, nonatomic) TZRotateViewController* rotateVC;
 
 @end
 

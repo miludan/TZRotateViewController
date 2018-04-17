@@ -7,20 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A4C8B56208619B600328E8F /* TZRotateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4C8B55208619B600328E8F /* TZRotateManager.m */; };
 		3A506B23206E815D00E63D82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A506B22206E815D00E63D82 /* AppDelegate.m */; };
 		3A506B26206E815D00E63D82 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A506B25206E815D00E63D82 /* ViewController.m */; };
 		3A506B29206E815D00E63D82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A506B27206E815D00E63D82 /* Main.storyboard */; };
 		3A506B2B206E815D00E63D82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A506B2A206E815D00E63D82 /* Assets.xcassets */; };
 		3A506B2E206E815D00E63D82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A506B2C206E815D00E63D82 /* LaunchScreen.storyboard */; };
 		3A506B31206E815D00E63D82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A506B30206E815D00E63D82 /* main.m */; };
-		3A506B3A206E81E100E63D82 /* BaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A506B39206E81E100E63D82 /* BaseAnimation.m */; };
-		3A506B3D206E81FB00E63D82 /* PresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A506B3C206E81FB00E63D82 /* PresentAnimation.m */; };
-		3A506B40206E820A00E63D82 /* DismissAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A506B3F206E820A00E63D82 /* DismissAnimation.m */; };
-		3A506B44206E838B00E63D82 /* RotateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A506B42206E838B00E63D82 /* RotateViewController.m */; };
+		3A506B3A206E81E100E63D82 /* TZBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A506B39206E81E100E63D82 /* TZBaseAnimation.m */; };
+		3A506B3D206E81FB00E63D82 /* TZPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A506B3C206E81FB00E63D82 /* TZPresentAnimation.m */; };
+		3A506B40206E820A00E63D82 /* TZDismissAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A506B3F206E820A00E63D82 /* TZDismissAnimation.m */; };
+		3A506B44206E838B00E63D82 /* TZRotateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A506B42206E838B00E63D82 /* TZRotateViewController.m */; };
 		3A506B45206E838B00E63D82 /* RotateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A506B43206E838B00E63D82 /* RotateViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A4C8B54208619B600328E8F /* TZRotateManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZRotateManager.h; sourceTree = "<group>"; };
+		3A4C8B55208619B600328E8F /* TZRotateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZRotateManager.m; sourceTree = "<group>"; };
 		3A506B1E206E815D00E63D82 /* ViewControllerRotateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewControllerRotateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A506B21206E815D00E63D82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3A506B22206E815D00E63D82 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -31,14 +34,14 @@
 		3A506B2D206E815D00E63D82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A506B2F206E815D00E63D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A506B30206E815D00E63D82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3A506B38206E81E100E63D82 /* BaseAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseAnimation.h; sourceTree = "<group>"; };
-		3A506B39206E81E100E63D82 /* BaseAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseAnimation.m; sourceTree = "<group>"; };
-		3A506B3B206E81FB00E63D82 /* PresentAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentAnimation.h; sourceTree = "<group>"; };
-		3A506B3C206E81FB00E63D82 /* PresentAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentAnimation.m; sourceTree = "<group>"; };
-		3A506B3E206E820A00E63D82 /* DismissAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DismissAnimation.h; sourceTree = "<group>"; };
-		3A506B3F206E820A00E63D82 /* DismissAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DismissAnimation.m; sourceTree = "<group>"; };
-		3A506B41206E838B00E63D82 /* RotateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotateViewController.h; sourceTree = "<group>"; };
-		3A506B42206E838B00E63D82 /* RotateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotateViewController.m; sourceTree = "<group>"; };
+		3A506B38206E81E100E63D82 /* TZBaseAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZBaseAnimation.h; sourceTree = "<group>"; };
+		3A506B39206E81E100E63D82 /* TZBaseAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZBaseAnimation.m; sourceTree = "<group>"; };
+		3A506B3B206E81FB00E63D82 /* TZPresentAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZPresentAnimation.h; sourceTree = "<group>"; };
+		3A506B3C206E81FB00E63D82 /* TZPresentAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZPresentAnimation.m; sourceTree = "<group>"; };
+		3A506B3E206E820A00E63D82 /* TZDismissAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZDismissAnimation.h; sourceTree = "<group>"; };
+		3A506B3F206E820A00E63D82 /* TZDismissAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZDismissAnimation.m; sourceTree = "<group>"; };
+		3A506B41206E838B00E63D82 /* TZRotateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZRotateViewController.h; sourceTree = "<group>"; };
+		3A506B42206E838B00E63D82 /* TZRotateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZRotateViewController.m; sourceTree = "<group>"; };
 		3A506B43206E838B00E63D82 /* RotateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RotateViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,15 +84,17 @@
 				3A506B2C206E815D00E63D82 /* LaunchScreen.storyboard */,
 				3A506B2F206E815D00E63D82 /* Info.plist */,
 				3A506B30206E815D00E63D82 /* main.m */,
-				3A506B38206E81E100E63D82 /* BaseAnimation.h */,
-				3A506B39206E81E100E63D82 /* BaseAnimation.m */,
-				3A506B3B206E81FB00E63D82 /* PresentAnimation.h */,
-				3A506B3C206E81FB00E63D82 /* PresentAnimation.m */,
-				3A506B3E206E820A00E63D82 /* DismissAnimation.h */,
-				3A506B3F206E820A00E63D82 /* DismissAnimation.m */,
-				3A506B41206E838B00E63D82 /* RotateViewController.h */,
-				3A506B42206E838B00E63D82 /* RotateViewController.m */,
+				3A506B38206E81E100E63D82 /* TZBaseAnimation.h */,
+				3A506B39206E81E100E63D82 /* TZBaseAnimation.m */,
+				3A506B3B206E81FB00E63D82 /* TZPresentAnimation.h */,
+				3A506B3C206E81FB00E63D82 /* TZPresentAnimation.m */,
+				3A506B3E206E820A00E63D82 /* TZDismissAnimation.h */,
+				3A506B3F206E820A00E63D82 /* TZDismissAnimation.m */,
+				3A506B41206E838B00E63D82 /* TZRotateViewController.h */,
+				3A506B42206E838B00E63D82 /* TZRotateViewController.m */,
 				3A506B43206E838B00E63D82 /* RotateViewController.xib */,
+				3A4C8B54208619B600328E8F /* TZRotateManager.h */,
+				3A4C8B55208619B600328E8F /* TZRotateManager.m */,
 			);
 			path = ViewControllerRotateDemo;
 			sourceTree = "<group>";
@@ -167,10 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A506B26206E815D00E63D82 /* ViewController.m in Sources */,
-				3A506B44206E838B00E63D82 /* RotateViewController.m in Sources */,
-				3A506B3A206E81E100E63D82 /* BaseAnimation.m in Sources */,
-				3A506B3D206E81FB00E63D82 /* PresentAnimation.m in Sources */,
-				3A506B40206E820A00E63D82 /* DismissAnimation.m in Sources */,
+				3A506B44206E838B00E63D82 /* TZRotateViewController.m in Sources */,
+				3A506B3A206E81E100E63D82 /* TZBaseAnimation.m in Sources */,
+				3A506B3D206E81FB00E63D82 /* TZPresentAnimation.m in Sources */,
+				3A4C8B56208619B600328E8F /* TZRotateManager.m in Sources */,
+				3A506B40206E820A00E63D82 /* TZDismissAnimation.m in Sources */,
 				3A506B31206E815D00E63D82 /* main.m in Sources */,
 				3A506B23206E815D00E63D82 /* AppDelegate.m in Sources */,
 			);

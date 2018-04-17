@@ -6,15 +6,13 @@
 //  Copyright © 2018年 Neulion. All rights reserved.
 //
 
-#import "RotateViewController.h"
-#import "DismissAnimation.h"
-#import "PresentAnimation.h"
+#import "TZRotateViewController.h"
 
-@interface RotateViewController ()<UIViewControllerTransitioningDelegate>
+@interface TZRotateViewController ()<UIViewControllerTransitioningDelegate>
 
 @end
 
-@implementation RotateViewController
+@implementation TZRotateViewController
 
 - (id)init {
     self = [super init];

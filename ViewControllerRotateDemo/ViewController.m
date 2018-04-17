@@ -18,7 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.rotateVC = [[RotateViewController alloc] init];
+    self.rotateVC = [[TZRotateViewController alloc] init];
     
     [self.containerView addSubview:self.rotateVC.view];
     self.rotateVC.view.frame = self.containerView.bounds;
