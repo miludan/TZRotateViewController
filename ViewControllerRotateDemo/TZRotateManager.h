@@ -12,4 +12,10 @@
 
 @interface TZRotateManager : NSObject
 
+@property (weak, nonatomic)   UIView* superView;
+@property (assign, nonatomic) UIInterfaceOrientation originalOrientation;
+
+- (void)transformToFullScreen;
+- (void)transformToEmbeddedScreen;
+
 @end

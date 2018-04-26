@@ -10,4 +10,12 @@
 
 @implementation TZRotateManager
 
+- (void)transformToFullScreen {
+    
+}
+
+- (void)transformToEmbeddedScreen {
+    
+}
+
 @end
