@@ -15,6 +15,8 @@
 @property (weak, nonatomic)   UIView* superView;
 @property (assign, nonatomic) UIInterfaceOrientation originalOrientation;
 
++ (instancetype)sharedInstance;
+
 - (void)transformToFullScreen:(UIViewController*)vc;
 - (void)transformToEmbeddedScreen;
 

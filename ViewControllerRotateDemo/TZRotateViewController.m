@@ -50,21 +50,8 @@
         [self dismissViewControllerAnimated:YES completion:nil];
     }else {
         //transform to fullscreen
-        [[UIApplication sharedApplication].delegate.window.rootViewController presentViewController:self animated:YES completion:nil];
+        [[TZRotateManager sharedInstance] transformToFullScreen:self];
     }
-}
-
-#pragma mark - UIViewControllerTransitioningDelegate Method
-- (nullable id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
-    return nil;
-}
-
-- (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
-    return nil;
-}
-
-- (nullable UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(nullable UIViewController *)presenting sourceViewController:(UIViewController *)source {
-    return nil;
 }
 
 @end
