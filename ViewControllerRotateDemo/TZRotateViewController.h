@@ -11,4 +11,6 @@
 
 @interface TZRotateViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView* contentView;
+
 @end

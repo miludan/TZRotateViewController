@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A2896C720933F3400716F6F /* TZRotateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2896C620933F3400716F6F /* TZRotateViewController.xib */; };
 		3A4C8B56208619B600328E8F /* TZRotateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4C8B55208619B600328E8F /* TZRotateManager.m */; };
 		3A506B23206E815D00E63D82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A506B22206E815D00E63D82 /* AppDelegate.m */; };
 		3A506B26206E815D00E63D82 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A506B25206E815D00E63D82 /* ViewController.m */; };
@@ -18,10 +19,10 @@
 		3A506B3D206E81FB00E63D82 /* TZPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A506B3C206E81FB00E63D82 /* TZPresentAnimation.m */; };
 		3A506B40206E820A00E63D82 /* TZDismissAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A506B3F206E820A00E63D82 /* TZDismissAnimation.m */; };
 		3A506B44206E838B00E63D82 /* TZRotateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A506B42206E838B00E63D82 /* TZRotateViewController.m */; };
-		3A506B45206E838B00E63D82 /* TZRotateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A506B43206E838B00E63D82 /* TZRotateViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A2896C620933F3400716F6F /* TZRotateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TZRotateViewController.xib; sourceTree = "<group>"; };
 		3A4C8B54208619B600328E8F /* TZRotateManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZRotateManager.h; sourceTree = "<group>"; };
 		3A4C8B55208619B600328E8F /* TZRotateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZRotateManager.m; sourceTree = "<group>"; };
 		3A506B1E206E815D00E63D82 /* ViewControllerRotateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewControllerRotateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,7 +43,6 @@
 		3A506B3F206E820A00E63D82 /* TZDismissAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZDismissAnimation.m; sourceTree = "<group>"; };
 		3A506B41206E838B00E63D82 /* TZRotateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TZRotateViewController.h; sourceTree = "<group>"; };
 		3A506B42206E838B00E63D82 /* TZRotateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZRotateViewController.m; sourceTree = "<group>"; };
-		3A506B43206E838B00E63D82 /* TZRotateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TZRotateViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 				3A506B3F206E820A00E63D82 /* TZDismissAnimation.m */,
 				3A506B41206E838B00E63D82 /* TZRotateViewController.h */,
 				3A506B42206E838B00E63D82 /* TZRotateViewController.m */,
-				3A506B43206E838B00E63D82 /* TZRotateViewController.xib */,
+				3A2896C620933F3400716F6F /* TZRotateViewController.xib */,
 				3A4C8B54208619B600328E8F /* TZRotateManager.h */,
 				3A4C8B55208619B600328E8F /* TZRotateManager.m */,
 			);
@@ -160,7 +160,7 @@
 				3A506B2E206E815D00E63D82 /* LaunchScreen.storyboard in Resources */,
 				3A506B2B206E815D00E63D82 /* Assets.xcassets in Resources */,
 				3A506B29206E815D00E63D82 /* Main.storyboard in Resources */,
-				3A506B45206E838B00E63D82 /* TZRotateViewController.xib in Resources */,
+				3A2896C720933F3400716F6F /* TZRotateViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
