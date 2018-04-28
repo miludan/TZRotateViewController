@@ -7,6 +7,7 @@
 //
 
 #import "TZRotateViewController.h"
+#import "TZRotateManager.h"
 
 @interface TZRotateViewController ()<UIViewControllerTransitioningDelegate>
 
@@ -42,6 +43,15 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskLandscape;
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return NO;
+}
 
 #pragma mark - Public Method
 - (IBAction)transform:(id)sender {

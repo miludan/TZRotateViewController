@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,14 +20,36 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <color key="backgroundColor" red="0.40784313729999999" green="0.63529411759999999" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
-            <viewLayoutGuide key="safeArea" id="D89-Od-7r5"/>
             <point key="canvasLocation" x="-705" y="-335"/>
         </view>
         <view contentMode="scaleToFill" id="spy-ry-mJe">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am test label here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVl-eY-frB">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sS-ic-tyg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <connections>
+                        <action selector="transform:" destination="-1" eventType="touchUpInside" id="BaS-2p-lAe"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-            <viewLayoutGuide key="safeArea" id="heU-09-SkH"/>
+            <constraints>
+                <constraint firstItem="4sS-ic-tyg" firstAttribute="leading" secondItem="spy-ry-mJe" secondAttribute="leading" id="4Or-Mx-Y93"/>
+                <constraint firstAttribute="trailing" secondItem="BVl-eY-frB" secondAttribute="trailing" id="Pvy-6E-wOE"/>
+                <constraint firstAttribute="bottom" secondItem="BVl-eY-frB" secondAttribute="bottom" id="Zbo-is-VBx"/>
+                <constraint firstAttribute="bottom" secondItem="4sS-ic-tyg" secondAttribute="bottom" id="ecF-yT-3bg"/>
+                <constraint firstItem="BVl-eY-frB" firstAttribute="leading" secondItem="spy-ry-mJe" secondAttribute="leading" id="h3p-Ew-5qe"/>
+                <constraint firstAttribute="trailing" secondItem="4sS-ic-tyg" secondAttribute="trailing" id="l1H-KF-fTN"/>
+                <constraint firstItem="BVl-eY-frB" firstAttribute="top" secondItem="spy-ry-mJe" secondAttribute="top" id="rn0-nZ-NYV"/>
+                <constraint firstItem="4sS-ic-tyg" firstAttribute="top" secondItem="spy-ry-mJe" secondAttribute="top" id="uRa-Z3-3VN"/>
+            </constraints>
             <point key="canvasLocation" x="-249" y="-336"/>
         </view>
     </objects>

@@ -10,14 +10,13 @@
 #import "TZDismissAnimation.h"
 #import "TZPresentAnimation.h"
 
-@interface TZRotateManager : NSObject
+@class TZRotateViewController;
 
-@property (weak, nonatomic)   UIView* superView;
-@property (assign, nonatomic) UIInterfaceOrientation originalOrientation;
+@interface TZRotateManager : NSObject
 
 + (instancetype)sharedInstance;
 
-- (void)transformToFullScreen:(UIViewController*)vc;
-- (void)transformToEmbeddedScreen;
+- (void)transformToFullScreen:(TZRotateViewController*)vc;
+//- (void)transformToEmbeddedScreen;
 
 @end

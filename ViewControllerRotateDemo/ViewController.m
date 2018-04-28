@@ -19,9 +19,15 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     self.rotateVC = [[TZRotateViewController alloc] init];
+    [self addChildViewController:self.rotateVC];
+    [self.rotateVC.view layoutIfNeeded];
     
-    [self.containerView addSubview:self.rotateVC.view];
-    self.rotateVC.view.frame = self.containerView.bounds;
+    [self.containerView addSubview:self.rotateVC.contentView];
+    self.rotateVC.contentView.frame = self.containerView.bounds;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 

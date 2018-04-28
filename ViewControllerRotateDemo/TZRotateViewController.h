@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TZRotateManager.h"
 
 @interface TZRotateViewController : UIViewController
 
