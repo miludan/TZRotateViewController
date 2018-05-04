@@ -6,4 +6,4 @@
 
 具体效果图如下，点击黄色区域的时候把黄色区域view所属的vc直接present到全屏。
 
-![](images/demo.gif)
+![Demo](https://github.com/miludan/TZRotateViewController/blob/master/Images/demo.gif)
