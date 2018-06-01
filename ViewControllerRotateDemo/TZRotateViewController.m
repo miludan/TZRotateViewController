@@ -27,6 +27,42 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orentataionDidChange:) name:UIDeviceOrientationDidChangeNotification object:nil];
+}
+
+- (void)orentataionDidChange:(NSNotification*)noti {
+    UIDevice* device = noti.object;
+    
+    switch (device.orientation) {
+        case UIDeviceOrientationPortrait:
+            break;
+        case UIDeviceOrientationPortraitUpsideDown:
+            break;
+        case UIDeviceOrientationLandscapeLeft:
+            NSLog(@"notification:::home button on the right");
+            break;
+        case UIDeviceOrientationLandscapeRight:
+            NSLog(@"notification:::home button on the left");;
+            break;
+        case UIDeviceOrientationFaceUp:
+            break;
+        case UIDeviceOrientationFaceDown:
+        default:
+            break;
+    }
+    
+    if (device.orientation == UIDeviceOrientationLandscapeLeft || device.orientation == UIDeviceOrientationLandscapeRight) {
+        if (!self.presentingViewController) {
+            [[TZRotateManager sharedInstance] transformToFullScreen:self];
+        }
+        
+    }else if (device.orientation == UIDeviceOrientationPortrait) {
+        if (self.presentingViewController) {
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
+    }else{
+        NSLog(@"notification:::%@", @(device.orientation));
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,6 +87,14 @@
 
 - (BOOL)prefersStatusBarHidden {
     return NO;
+}
+
+- (BOOL)shouldAutorotate {
+    return YES;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
 }
 
 #pragma mark - Public Method
