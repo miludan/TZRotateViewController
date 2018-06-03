@@ -18,8 +18,6 @@
 - (id)init {
     self = [super init];
     if (self) {
-        self.transitioningDelegate = self;
-        self.modalPresentationStyle = UIModalPresentationFullScreen;
     }
     return self;
 }

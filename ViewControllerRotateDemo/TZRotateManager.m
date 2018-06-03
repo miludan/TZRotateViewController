@@ -47,7 +47,7 @@
 
 - (void)transformToFullScreen:(TZRotateViewController *)vc {
     vc.transitioningDelegate = self;
-    vc.modalPresentationStyle = UIModalPresentationOverFullScreen;
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
     [vc removeFromParentViewController];
     self.presentedVC = vc;
     self.superView = vc.contentView.superview;
