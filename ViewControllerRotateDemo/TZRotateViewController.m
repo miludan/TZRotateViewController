@@ -10,6 +10,8 @@
 
 @interface TZRotateViewController ()<UIViewControllerTransitioningDelegate>
 
+@property (assign, nonatomic) BOOL isRating;
+
 @end
 
 @implementation TZRotateViewController
@@ -25,6 +27,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orentataionDidChange:) name:UIDeviceOrientationDidChangeNotification object:nil];
+}
+
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+    self.isRating = YES;
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+    self.isRating = NO;
 }
 
 - (void)orentataionDidChange:(NSNotification*)noti {
@@ -49,12 +59,12 @@
     }
     
     if (device.orientation == UIDeviceOrientationLandscapeLeft || device.orientation == UIDeviceOrientationLandscapeRight) {
-        if (!self.presentingViewController) {
+        if (!self.presentingViewController && !self.isRating) {
             [[TZRotateManager sharedInstance] transformToFullScreen:self];
         }
         
     }else if (device.orientation == UIDeviceOrientationPortrait) {
-        if (self.presentingViewController) {
+        if (self.presentingViewController && !self.isRating) {
             [self dismissViewControllerAnimated:YES completion:nil];
         }
     }else{
